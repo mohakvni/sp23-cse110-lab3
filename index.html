@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab-2 Meeting Notes</title>
-    <link href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico">
 </head>
 <body>
     <header>
         <h1>Team X Meeting Notes</h1>
         <nav>
-            <li><a href="#meeting_details">Meeting Details</a></li>
-            <li><a href="#attendance"> Attendee List</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#unfinished_business">Unfinished Business</a></li>
-            <li><a href="#new_business">New Business</a></li>
-            <li><a href="#misc">Misc.</a></li>
-            <li><a href="#diagrams">Architecture</a></li>
-            <li><a href="#audio_video">Audio & Video</a></li>
+            <a href="#meeting_details">Meeting Details</a>
+            <a href="#attendance"> Attendee List</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#unfinished_business">Unfinished Business</a>
+            <a href="#new_business">New Business</a>
+            <a href="#misc">Misc.</a>
+            <a href="#diagrams">Architecture</a>
+            <a href="#audio_video">Audio & Video</a>
         </nav>
     </header>
 
     <main>
-        <br/>
-        <hr/>
+        <br>
+        <hr>
 
         <section id="meeting_details">
             <h2><u>Meeting Details</u></h2>
@@ -32,13 +32,11 @@
                 <li><strong>Project:</strong> The perpetual</li>
                 <li><b>Date & Time:</b> <i>Monday, 17th April, 2023</i> at <em>12:00 P.M.</em></li>
                 <li><strong>Goals:</strong>
-                    <span>
-                        <ol type="a">
-                            <li>To understand the project at hand</li>
-                            <li>To ensure a clear action plan</li>
-                            <li>To assign tasks for the next two weeks</li>
-                        </ol>
-                    </span> 
+                    <ol type="a">
+                        <li><span>understand the project at hand</span></li>
+                        <li><span>To ensure a clear action plan</span></li>
+                        <li><span>To assign tasks for the next two weeks</span></li>
+                    </ol>
                 </li>
             </ul>
         </section>
@@ -51,11 +49,11 @@
             <h2><u>Attendee List</u></h2>
             <div>
                 <ul>
-                    <li><input type="checkbox" checked> John Doe</input></li>
-                    <li><input type="checkbox"> M. Johnson</input></li>
-                    <li><input type="checkbox" checked> V. Kohli</input></li>
-                    <li><input type="checkbox"> G. Maxwell</input></li>
-                    <li><input type="checkbox" checked> L. Messi</input></li>
+                    <li><input type="checkbox" checked> John Doe</li>
+                    <li><input type="checkbox"> M. Johnson</li>
+                    <li><input type="checkbox" checked> V. Kohli</li>
+                    <li><input type="checkbox"> G. Maxwell</li>
+                    <li><input type="checkbox" checked> L. Messi</li>
                 </ul>
             </div>
         </section>
@@ -121,33 +119,32 @@
                     <input type="radio"><label>Question</label>
                     <input type="radio"><label>Comment</label>
                     <input type="radio"><label>Concerns</label>
-
                     <label for="date">Date Added: </label>
-                <input type="date" name="date">
-                <br/><br/>
-                <label for="member">Member Adding:</label>
-                <input type="text" name="member">
-                <br/><br/>
-                <label for="ice-cream-choice">Position:</label>
-                <input list="position-list">
-                <datalist id="position-list">
-                    <option value="Developer">
-                    <option value="Designer">
-                    <option value="Manager">
-                </datalist>
-                <br/><br/>
-                <label>Comment: </label>
-                <br/><br/>
-                <textarea></textarea>
-                <br/><br/>
-                <label>Visibility type:</label>
-                <select>
-                    <option value="">Public</option>
-                    <option value="">Unlisted</option>
-                    <option value="">Internal</option>
-                </select>
-                <br/><br/>
-                <button type="submit">Submit</button>
+                    <input type="date" name="date" id="date">
+                    <br/><br/>
+                    <label for="member">Member Adding:</label>
+                    <input type="text" name="member" id="member">
+                    <br/><br/>
+                    <label for="pos-list">Position:</label>
+                    <input list="position-list" id="pos-list">
+                    <datalist id="position-list">
+                        <option value="Developer">
+                        <option value="Designer">
+                        <option value="Manager">
+                    </datalist>
+                    <br/><br/>
+                    <label>Comment: </label>
+                    <br/><br/>
+                    <textarea></textarea>
+                    <br/><br/>
+                    <label>Visibility type:</label>
+                    <select>
+                        <option value="">Public</option>
+                        <option value="">Unlisted</option>
+                        <option value="">Internal</option>
+                    </select>
+                    <br/><br/>
+                    <button type="submit">Submit</button>
                 </fieldset>
             </form>
         </section>
@@ -158,7 +155,7 @@
 
         <section id="diagrams">
             <h2><u>Architecture</u></h2>
-            <img src="./external/System.jpg" width="30%">
+            <img src="./external/System.jpg" width="320" alt="Image not found">
         </section>
         
         <hr/>
