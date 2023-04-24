@@ -49,6 +49,7 @@ br, hr{ /*Selector List*/
 
 hr:nth-child(1){
     display: block; /* display block */
+    position: relative;;
 }
 
 section{ /* all border-short*/
@@ -75,10 +76,19 @@ section{ /* all border-short*/
     cursor: pointer;
     max-width: 10vw; /* Max Width*/
     max-height: 10vh; /* Max height*/
+    position: relative;
 }
 
-.submit_button:active {
-    box-shadow: 2px 2px 5px black;
+label ~ input{
+    font-size: 22px;
+}
+
+label + input{
+    font-size: 22px;
+}
+
+footer.copyright{
+    color: red;
 }
 
 @media (max-width: 1250px) {
