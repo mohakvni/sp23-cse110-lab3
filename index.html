@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab-2 Meeting Notes</title>
     <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./public/index.css">
 </head>
 <body>
     <header>
@@ -23,7 +24,6 @@
     </header>
 
     <main>
-        <br>
         <hr>
 
         <section id="meeting_details">
@@ -42,8 +42,6 @@
         </section>
 
         <hr/>
-        <br/>
-        <hr/>
 
         <section id="attendance">
             <h2><u>Attendee List</u></h2>
@@ -60,7 +58,6 @@
 
         <hr/>
         <br/>
-        <hr/>
         
         <section id="agenda">
             <h2><u>Agenda</u></h2>
@@ -75,7 +72,6 @@
         
         <hr/>
         <br/>
-        <hr/>
 
         <section id="unfinished_business">
             <h2><u>Unfinished Business</u></h2>
@@ -93,7 +89,6 @@
         
         <hr/>
         <br/>
-        <hr/>
 
         <section id="new_business">
             <h2><u>New Business</u></h2>
@@ -107,7 +102,6 @@
         
         <hr/>
         <br/>
-        <hr/>
 
         <section id="misc">
             <h2><u>Misc. Information</u></h2>
@@ -116,11 +110,18 @@
             <form>
                 <fieldset>
                     <legend>To Add:</legend>
-                    <input type="radio"><label>Question</label>
-                    <input type="radio"><label>Comment</label>
-                    <input type="radio"><label>Concerns</label>
-                    <label for="date">Date Added: </label>
-                    <input type="date" name="date" id="date">
+
+                    <div>
+                        <input type="radio"><label>Question</label>
+                        <input type="radio"><label>Comment</label>
+                        <input type="radio"><label>Concerns</label>
+                    </div>
+
+                    <div>
+                        <label for="date">Date Added: </label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    
                     <br/><br/>
                     <label for="member">Member Adding:</label>
                     <input type="text" name="member" id="member">
@@ -144,14 +145,13 @@
                         <option value="">Internal</option>
                     </select>
                     <br/><br/>
-                    <button type="submit">Submit</button>
+                    <button class="submit_button" type="submit">Submit</button>
                 </fieldset>
             </form>
         </section>
         
         <hr/>
         <br/>
-        <hr/>
 
         <section id="diagrams">
             <h2><u>Architecture</u></h2>
@@ -160,7 +160,6 @@
         
         <hr/>
         <br/>
-        <hr/>
 
         <section id="audio_video">
             <h2><u>Audio & Video</u></h2>
