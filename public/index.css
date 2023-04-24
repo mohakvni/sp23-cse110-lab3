@@ -1,0 +1,88 @@
+/* CSS for index.html */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+/* Header */
+
+*{ /* Universal Selector (*) */
+    background-color:floralwhite;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{ 
+    display: flex; /* display flex*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 3vh; /* height relative measurement */
+    margin-bottom: 10pt; /* absoulte measurement margin-short*/
+}
+
+h1{ /*element selector */
+    text-align: center; /*text-align*/
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{ /* Descendant combinator*/
+    text-decoration: none;
+    margin-left: 9px; /* absoulte measurement */
+    color: black;
+    padding: 0.5pc; /* padding-long absoulte measurement */
+}
+
+nav a:hover{ /* Pseudo-class */
+    text-decoration: underline; /* text-decoration */
+    text-decoration-color: #FF0000
+}
+
+/* Body */
+
+br, hr{ /*Selector List*/
+    display: none; /* display none*/
+}
+
+hr:nth-child(1){
+    display: block; /* display block */
+}
+
+section{ /* all border-short*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 1em; /* relative measurement margin-short */
+    border-radius: 0.5vw; /* border-radius */
+    padding-left: 1.5vw; /* relative measurement padding-short */
+    padding-bottom: 1.5vw;
+}
+
+#misc form > fieldset{ /* id-selector child combinator*/
+    display: grid; /* display grid */
+    grid-template-columns: 0.5fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-row-gap: 20px;
+}
+
+.submit_button{ /* class selector */
+    border: 1px solid; /* border long*/
+    color: hsl(1, 1, 2);
+    background-color: rgb(256, 256, 256);
+    cursor: pointer;
+    max-width: 10vw; /* Max Width*/
+    max-height: 10vh; /* Max height*/
+}
+
+.submit_button:active {
+    box-shadow: 2px 2px 5px black;
+}
+
+@media (max-width: 1250px) {
+    *{
+        background-color: lightgoldenrodyellow;
+    }
+}
